@@ -1,0 +1,92 @@
+
+<div class="form-section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+              <div class="main-box">
+                <div class="box1">
+                  <h1>Hi Dhinesh Ram</h1>
+                  <h2>You Are Doing Amazing!</h2>
+                </div>
+                <div class="box2">
+                 
+                </div>
+              </div>
+              <div class="box3">
+                <img src="../assets/images/user.png">
+              </div>
+            </div>
+          </div>
+    </div>
+
+
+    <div id="exTab2" class="container-fluid mt-4">
+        <div class="row">
+            <div class="com-md-12 mt-4">
+                <div class="call-log">               
+                    <p>Call Log</p>
+                    </div>
+            </div>
+        </div>	
+        <ul class="nav nav-tabs reschedule">
+                    <li class="active">
+                     <a  id="first" (click)="tabChange('first')"> Reschedule Student</a>
+                    </li>
+                    <li>
+                        <a id="second" (click)="tabChange('second')"> Reschedule Faculty</a>
+                    </li>
+                    <li>
+                        <a id="third" (click)="tabChange('third')"> General Queries</a>
+                    </li>
+                </ul>
+        
+                    <div class="tab-content">
+                      <div class="tab-pane active" *ngIf="id =='first'">
+                        <div class="row mt-2">
+                            <div class="col-12">
+                              <div class="form">
+                                <div>
+                                  <p>Date &amp; Time</p>
+                                  <input type="date" placeholder="Sep 20,2020,10:22:04 AM"> 
+                                </div>
+                                <div>
+                                  <p>Student Content</p>
+                                  <input type="datetime" placeholder="+91 1111111111"> 
+                                </div>
+                                <div>
+                                  <p>Unique ID</p>
+                                  <input type="datetime" placeholder="*********"> 
+                                </div>
+                                <div>
+                                  <p>Student Name</p>
+                                  <input type="datetime" placeholder="Priyanka Waghamare"> 
+                                </div>
+                                <div>
+                                  <p>Date &amp; Time</p>
+                                  <input type="datetime" placeholder="Priyankawag@gmail.com"> 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12">
+                              <div class="textarea">
+                              <p>Note</p>
+                              <textarea type="text" placeholder="Comment"></textarea>
+                              <div class="submit-btn">Submit</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane active" *ngIf="id =='second'">
+                  <h3>Notice the gap between the content and tab after applying a background color</h3>
+                        </div>
+                <div class="tab-pane active" *ngIf="id =='third'">
+                  <h3>add clearfix to tab-content (see the css)</h3>
+                        </div>
+                    </div>
+          </div>
+
+
+          
+</div>
